@@ -1,0 +1,50 @@
+<div id="nav-proxy"></div>
+
+<nav id="nav" class="container">
+	<div class="nav-logo">
+		<a href="https://easybalance.net">
+			<img src="https://easybalance.net/img/logo.png" alt="Easy Balance Logo" />
+		</a>
+	</div>
+	<div class="nav-links">
+		<ul>
+			<li>
+				<a href="https://easybalance.net/index.html">Home</a>
+			</li>
+			<li>
+				<a href="https://easybalance.net/contact">Contact Us</a>
+			</li>
+		</ul>
+		<div class="nav-links-extra">
+			<a href="https://easybalance.net/contact" class="button orange-red white shadow-2-orange bw-0 focus-red hover-shift-t-2 ease-200">Request a demo</a>
+			<a href=""><i class="fab fa-facebook"></i></a>
+			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href=""><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+	<div id="mobile-nav-toggler">
+		<button><i class="fas fa-bars"></i></button>
+	</div>
+</nav>
+
+
+<script type="text/javascript">
+	const nav = document.querySelector('#nav');
+
+	window.addEventListener('scroll', () => {
+		if(window.scrollY > 100) {
+			nav.classList.add('scrolled');
+		} else {
+			nav.classList.remove('scrolled');
+		}
+	});
+
+
+	const mobileNavToggler = document.querySelector('#mobile-nav-toggler');
+	const navLinks = document.querySelector('#nav .nav-links');
+
+	mobileNavToggler.addEventListener('click', () => {
+		navLinks.classList.toggle('shown');
+	});
+
+</script>

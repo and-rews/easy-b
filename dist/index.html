@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<!-- smi -->
+	<meta property="og:title" content="EasyBalance" />
+	<meta property="og:url" content="//softnage.net" />
+	<meta property="og:description"
+		content="Built to handle managerial and operational level activities of any business with a breeze." />
+	<meta property="og:image" content="https://softnage.net/img/banner.png" />
+	<meta property="og:locale" content="en_GH" />
+	<meta property="og:type" content="website" />
+	<meta name="description" content=" Discover the coding and robotics tools and systems used in SmartTribe classes" />
+	<meta name="keywords"
+		content="smartribe coding, smartribe robotics, coding tools, robotic tool, robotic systems, HTML, CSS, JavaScript, Python, microbit, Microsoft MakeCode, Adda, MIT App Inventor, Scratch, Pluto Blocks, Beetle Blocks, Bootstrap, MySQL, AI2, programming, industry-standard, innovative projects, kids." />
+
+	<title>EasyBalance</title>
+
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@800&display=swap"
+		rel="stylesheet" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+		crossorigin="anonymous" />
+
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
+	<link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+	<div id="root">
+
+		<div id="nav-proxy"></div>
+
+		<nav id="nav" class="container">
+			<div class="nav-logo">
+				<a href="https://easybalance.net">
+					<img src="https://easybalance.net/img/logo.png" alt="Easy Balance Logo" />
+				</a>
+			</div>
+			<div class="nav-links">
+				<ul>
+					<li>
+						<a href="https://easybalance.net/index.html">Home</a>
+					</li>
+					<li>
+						<a href="https://easybalance.net/contact">Contact Us</a>
+					</li>
+				</ul>
+				<div class="nav-links-extra">
+					<a href="https://easybalance.net/contact"
+						class="button orange-red white shadow-2-orange bw-0 focus-red hover-shift-t-2 ease-200">Request
+						a demo</a>
+					<a href=""><i class="fab fa-facebook"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+			<div id="mobile-nav-toggler">
+				<button><i class="fas fa-bars"></i></button>
+			</div>
+		</nav>
+
+
+		<script type="text/javascript">
+			const nav = document.querySelector('#nav');
+
+			window.addEventListener('scroll', () => {
+				if (window.scrollY > 100) {
+					nav.classList.add('scrolled');
+				} else {
+					nav.classList.remove('scrolled');
+				}
+			});
+
+
+			const mobileNavToggler = document.querySelector('#mobile-nav-toggler');
+			const navLinks = document.querySelector('#nav .nav-links');
+
+			mobileNavToggler.addEventListener('click', () => {
+				navLinks.classList.toggle('shown');
+			});
+
+		</script>
+
+
+		<div class='hero container'>
+			<div class="hero-left column-pad">
+				<div>
+					<h1>SoftNage Is Now EasyBalance!</h1>
+					<p class="mb-4 pb-2 white-text">Built to handle managerial and operational level activities of any
+						shop, wholesale or retail outlet with a breeze.</p>
+					<a href="/contact"
+						class="button orange-red white shadow-2-orange bw-0 focus-red hover-shift-t-2 ease-200">Ready to
+						get started</a>
+				</div>
+			</div>
+			<div class="hero-right column-pad">
+				<img src="/img/banner.png" alt="" />
+			</div>
+		</div>
+
+		<div class="intro container bg-alt">
+			<div class="intro-left">
+				<div>
+					<p>
+						Built with an in-depth study of how shops and supermarkets work.
+					</p>
+					<a class="button orange-red white shadow-2-orange bw-0 focus-red hover-shift-t-2 ease-200"
+						href="/contact">Request a tour</a>
+				</div>
+			</div>
+			<div class="intro-right">
+				<img src="/img/woman1.png"
+					alt="Built with an in-depth study of how shops and supermarkets work. | Easy Balance" />
+			</div>
+		</div>
+
+		<div class="video-sec container">
+			<div class="video-sec-label">
+				<h2>Managing a shop should not be hard</h2>
+				<div style="display: flex; justify-content: center;">
+					<p style="max-width: 600px;">We make remote and on-premise shop management a breeze with features
+						for all your needs.</p>
+				</div>
+			</div>
+
+			<div class="video-sec-left">
+				<div>
+					<h3>Comprehensive Retail and Wholesale Management System</h3>
+					<p>
+						Manage your Retail/Wholesale shop with our point of sale software
+
+					<ul>
+						<li>
+							Know when products are expiring
+						</li>
+						<li>
+							Know when products quantity is reducing
+						</li>
+						<li>
+							Know when your business is making profit or loss
+						</li>
+					</ul>
+					</p>
+				</div>
+			</div>
+			<div class="video-sec-right">
+				<video id="player" playsinline controls data-poster="https://easybalance.net/img/vid-banner.png">
+					<source src="./vide.mp4" type="video/mp4" />
+					<!-- <source src="/path/to/video.webm" type="video/webm" /> -->
+
+					<!-- Captions are optional -->
+					<!-- <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default /> -->
+				</video>
+			</div>
+		</div>
+
+		<div class="new-jumbo container">
+			<div class="new-jumbo-hol">
+				<div class="new-jumbo-hol-left">
+					<h2>Transform Your Wholesale Center With Easy Balance</h2>
+					<p>
+						With the ever-changing market conditions and increasing competition within
+						industries, Easy Balance helps wholesale and retail distributors respond
+						to the dynamics of the market. You gain a centralized solution for all
+						information on customers, orders, suppliers, stock, and products.
+					</p>
+					<p>
+						Integrate your unique set of activities and workflows with a system
+						specifically designed to deliver wholesale commerce, sales, management, inventory
+						and analysis - all from a single platform.
+					</p>
+					<a href="/contact"
+						class="button orange-red white shadow-2-orange bw-0 focus-red hover-shift-t-2 ease-200">Get
+						started for free</a>
+				</div>
+				<div class="new-jumbo-hol-right">
+					<!-- <img src="https://via.placeholder.com/514x580" alt="" /> -->
+					<img src="./img/transform.png" alt="" />
+				</div>
+			</div>
+		</div>
+
+		<div class="modules container bg-alt">
+			<div class="modules-hol">
+				<div class="modules-hol-module-col">
+					<div class="module">
+						<div class="icon-block">
+							<img src="./img/icons/icon4.png" alt="" />
+						</div>
+						<h2>Point of Sale</h2>
+						<p>
+							Boost sales by selling wherever your customers are ready to buy with Easy Balance,
+							a cloud based system for quick and convenient sale transactions.
+						</p>
+					</div>
+				</div>
+				<div class="modules-hol-module-col">
+					<div class="module">
+						<div class="icon-block">
+							<img src="./img/icons/icon5.png" alt="" />
+						</div>
+						<h2>Stock Management</h2>
+						<p>
+							Receive stock from your suppliers, prepare purchase orders and stay ahead
+							of the game with notifications about stock levels and upcoming expiry
+							dates.
+						</p>
+					</div>
+				</div>
+				<div class="modules-hol-module-col">
+					<div class="module">
+						<div class="icon-block">
+							<img src="./img/icons/icon6.png" alt="" />
+						</div>
+						<h2>Customer Management</h2>
+						<p>
+							View and manage information about your customers from a single dashboard.
+							Get an indept report on all transactions between you and each customer.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="features container bg-alt">
+			<div class="feature column-pad">
+				<img src="/img/icons/icon1.png" alt="" />
+				<h4>Analytical Reports</h4>
+				<p>
+					With Easy Balance, you don't have to face the hassle of manual spreadsheets and sales tracking
+					anymore. Everything is in one integrated system, accessible everywhere, and is easy to adjust in
+					minutes.
+				</p>
+			</div>
+			<div class="feature column-pad">
+				<img src="/img/icons/icon3.png" alt="" />
+				<h4>Integrated System</h4>
+				<p>
+					Manage all your wholesale or retail branches from a central system. Easy Balance
+					allows you to transfer and audit stock accross multiple branches without hustle.
+				</p>
+			</div>
+			<div class="feature column-pad">
+				<img src="/img/icons/icon2.png" alt="" />
+				<h4>Easy Moderation</h4>
+				<p>
+					Regular employees shouldn't see your finance records even if they are
+					making sales, with Easy Balance, you have the choice to select what features
+					your employees have access to.
+				</p>
+			</div>
+		</div>
+
+		<div class="jumbo container">
+			<div class="jumbo-left column-pad">
+				<img src="/img/cards2.png" alt="" />
+			</div>
+			<div class="jumbo-right column-pad">
+				<div>
+					<h3>Simplify your business administration</h3>
+					<p>
+						As your business grows, hires more employees, and expands to multiple locations, the
+						administrative work can become more mundane, time-consuming, and stressful. Easy Balance
+						simplifies all admin processes, saves you hours of your time, and removes the stress from
+						managing your business.
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+	<script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+	<script>
+		const player = new Plyr('#player');
+	</script>
+</body>
+
+</html>

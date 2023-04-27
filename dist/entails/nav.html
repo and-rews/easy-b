@@ -1,0 +1,44 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark deep-purple darken-3 w-100" style="position:fixed;">
+	<div class="container">
+		<a class="navbar-brand py-0" href="/">
+			<img id="element-id-0-" src="https://softnage.net/img/logo.png" height="65px;">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+		aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="basicExampleNav">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item ml-4" data-url=''>
+				<a class="nav-link font-weight-normal" href="//softnage.net">Home</a>
+			</li>
+			<li class="nav-item ml-4" data-url='contact'>
+				<a class="nav-link" href="//softnage.net/contact">Contact</a>
+			</li>
+			<li class="nav-item ml-4">
+				<button class="nav-link btn btn-sm" style="background: #f07904;" data-toggle="modal" data-target="#exampleModal">Request for a demo</button>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+
+
+
+<script type="text/javascript">
+	// obviously won't work
+	const path = window.location.pathname.split('/')[1];
+
+	let theChosenOne;
+
+	document.querySelectorAll("[data-url]").forEach(elem => {
+		if(path.includes(elem.getAttribute('data-url'))) {
+			theChosenOne = elem;
+		}
+	})
+	if(theChosenOne)
+	theChosenOne.classList.add('active')
+	else document.querySelector("[data-url='/']").classList.add('active');
+</script>
